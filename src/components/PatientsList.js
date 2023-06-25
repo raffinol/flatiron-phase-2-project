@@ -3,7 +3,7 @@ import React from 'react';
 function PatientsList({ patients }) {
   console.log(patients);
 
-  const patientsMap = patients.map((patient) => <li>{patient.name}</li>);
+  const patientsMap = patients.map((patient) => <li key={patient.name}>{patient.name}</li>);
   return (
     <div>
       <h3>Patients</h3>
