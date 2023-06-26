@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Switch, Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import PatientsList from './components/PatientsList';
 import NewPatient from './components/NewPatient';
-import { Route } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
   const [patients, setPatients] = useState([]);
