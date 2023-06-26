@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import PatientsList from './components/PatientsList';
 import NewPatient from './components/NewPatient';
+import NavBar from './components/NavBar';
 
 function App() {
   const [patients, setPatients] = useState([]);
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <Switch>
         <Route exact path="/">
           <PatientsList patients={patients} />
