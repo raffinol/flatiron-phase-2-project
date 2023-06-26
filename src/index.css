@@ -13,3 +13,8 @@ nav a:active {
   color: rgb(50, 48, 156);
   border-bottom: 2px solid rgb(50, 48, 156);
 }
+
+nav a.active {
+  background-color: rgb(218, 213, 213);
+  color: rgb(50, 48, 156);
+}
