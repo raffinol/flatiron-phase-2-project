@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PatientInfo from './PatientInfo';
 
-function PatientsList({ patients }) {
+function PatientsList({ patients, setPatients }) {
   console.log(patients);
   const [patient, setPatient] = useState('');
 
@@ -14,7 +14,7 @@ function PatientsList({ patients }) {
     <div>
       <h3>Patients</h3>
       {patientsMap}
-      <PatientInfo patient={patient} />
+      <PatientInfo patient={patient} patients={patients} setPatients={setPatients} />
     </div>
   );
 }
