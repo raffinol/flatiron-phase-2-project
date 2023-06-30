@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 function NewPatient(props) {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ function NewPatient(props) {
       [event.target.name]: event.target.value,
     });
   }
+
+  const history = useHistory();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -32,6 +35,7 @@ function NewPatient(props) {
     })
       .then((r) => r.json())
       .then((patientData) => props.onAddPatient(patientData));
+    history.push('/');
   }
 
   return (
