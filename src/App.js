@@ -22,7 +22,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/">
-          <PatientsList patients={patients} />
+          <PatientsList patients={patients} setPatients={setPatients} />
         </Route>
         <Route exact path="/NewPatient">
           <NewPatient onAddPatient={onAddPatient} />
