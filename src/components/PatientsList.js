@@ -14,7 +14,7 @@ function PatientsList({ patients, setPatients }) {
     <div>
       <h3>Patients</h3>
       {patientsMap}
-      <PatientInfo patient={patient} patients={patients} setPatients={setPatients} />
+      <PatientInfo patient={patient} setPatient={setPatient} patients={patients} setPatients={setPatients} />
     </div>
   );
 }

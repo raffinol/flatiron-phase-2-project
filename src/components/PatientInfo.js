@@ -1,7 +1,7 @@
 import React from 'react';
 import DeletePatient from './DeletePatient';
 
-function PatientInfo({ patient, patients, setPatients }) {
+function PatientInfo({ patient, setPatient, patients, setPatients }) {
   const { id, name, age, previousAppointment, nextAppointment } = patient;
   return (
     <div>
@@ -10,7 +10,7 @@ function PatientInfo({ patient, patients, setPatients }) {
       <p>Age: {age}</p>
       <p>Previous Appointment: {previousAppointment}</p>
       <p>Next Appointment: {nextAppointment}</p>
-      <DeletePatient id={id} patients={patients} setPatients={setPatients} />
+      <DeletePatient id={id} patients={patients} setPatients={setPatients} setPatient={setPatient} />
     </div>
   );
 }

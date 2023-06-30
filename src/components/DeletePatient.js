@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DeletePatient({ id, patients, setPatients }) {
+function DeletePatient({ id, patients, setPatients, setPatient }) {
   function handleDeleteClick() {
     fetch(`http://localhost:3000/patients/${id}`, {
       method: 'DELETE',
@@ -10,6 +10,7 @@ function DeletePatient({ id, patients, setPatients }) {
         const updatedPatients = patients.filter((p) => p.id !== id);
         setPatients(updatedPatients);
       });
+    setPatient({ name: '', age: '', previousAppointment: '', nextAppointment: '' });
   }
   return (
     <div>
