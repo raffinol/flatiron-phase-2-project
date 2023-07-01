@@ -1,4 +1,4 @@
-nav a {
+/* nav a {
   display: inline-block;
   margin: 1rem 2rem;
   text-decoration: none;
@@ -17,4 +17,4 @@ nav a:active {
 nav a.active {
   background-color: rgb(218, 213, 213);
   color: rgb(50, 48, 156);
-}
+} */
