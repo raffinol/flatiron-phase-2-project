@@ -29,7 +29,7 @@ function App() {
           <NewPatient onAddPatient={onAddPatient} />
         </Route>
         <Route exact path="/ModifyPatient">
-          <ModifyPatient />
+          <ModifyPatient patients={patients} setPatients={setPatients} />
         </Route>
         <Route path="*">
           <h1>404 not found</h1>
