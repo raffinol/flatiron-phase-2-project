@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function ModifyPatient({ patients, setPatients }) {
   const location = useLocation();
@@ -52,31 +54,47 @@ function ModifyPatient({ patients, setPatients }) {
 
   return (
     <section>
+      <br />
       <h3>Modify Patient</h3>
-      <form onSubmit={handleUpdate}>
-        <label>
-          name:
-          <input type="text" name="name" defaultValue={patient.name} onChange={handleChange} />
-        </label>
-        <label>
-          age:
-          <input type="number" name="age" defaultValue={patient.age} onChange={handleChange} />
-        </label>
-        <label>
-          Previous Appointment:
-          <input
-            type="text"
-            name="previousAppointment"
-            defaultValue={patient.previousAppointment}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Next Appointment:
-          <input type="text" name="nextAppointment" defaultValue={patient.nextAppointment} onChange={handleChange} />
-        </label>
-        <button type="submit">Modify</button>
-      </form>
+      <Form onSubmit={handleUpdate}>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>
+            name:
+            <Form.Control type="text" name="name" defaultValue={patient.name} onChange={handleChange} />
+          </Form.Label>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>
+            age:
+            <Form.Control type="number" name="age" defaultValue={patient.age} onChange={handleChange} />
+          </Form.Label>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>
+            Previous Appointment:
+            <Form.Control
+              type="text"
+              name="previousAppointment"
+              defaultValue={patient.previousAppointment}
+              onChange={handleChange}
+            />
+          </Form.Label>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>
+            Next Appointment:
+            <Form.Control
+              type="text"
+              name="nextAppointment"
+              defaultValue={patient.nextAppointment}
+              onChange={handleChange}
+            />
+          </Form.Label>
+        </Form.Group>
+        <Button type="submit" variant="primary">
+          Modify
+        </Button>
+      </Form>
     </section>
   );
 }
