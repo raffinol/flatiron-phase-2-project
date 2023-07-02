@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Patients Registry App
+
+This is a Single Page Application built with React that communicates with a JSON server to keep track of patients and their previous and next appointment dates. This is useful to self employed psychologists, coaches, trainers and anybody that wants to keep track of their patients/clients for scheduling purposes.
+
+## Requirements
+
+This SPA uses a JSON server to fetch the data and you can set this up before running your App.
+
+- Fork and clone this template repo: https://github.com/raffinol/json-server-template.
+
+- Then, in a terminal window navigate to the repo local folder and install the dependencies by running:
+
+  `npm install`
+
+- Run the server:
+
+  `npm start`
+
+While your server is running, you can make requests to http://localhost:3000/patients. You can check it out in the browser to make sure your server works.
+
+## Installation
+
+- Fork and clone this repo. Then, in a terminal window navigate to the repo local folder and install the dependencies by running:
+
+  `npm install`
+
+- Start the app by running:
+
+  `npm start`
+
+This will start the app and automatically open it in your default browser, if the app doesn't automatically start you can go to http://localhost:4000 on your browser.
+
+- **Enjoy!**
+
+## How it works
+
+You can click on any patient from the patient list to show their information. Once a patient is selected you can modify their information or delete it by clicking the respective buttons. You can also add new Patients clicking 'New Patient" at the navigation bar.
+
+## Support
+
+Send an e-mail to [raffinol.dev@gmail.com](mailto:raffinol.dev@gmail.com)
+
+## Authors and acknowledgment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Thanks to flatiron school and the instructors for the guidance on this phase-2 project.
 
-In the project directory, you can run:
+## License
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the terms of the [MIT](https://choosealicense.com/licenses/mit/) license.
