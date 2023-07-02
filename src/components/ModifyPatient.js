@@ -55,21 +55,21 @@ function ModifyPatient({ patients, setPatients }) {
   return (
     <section>
       <br />
-      <h3>Modify Patient</h3>
+      <h3 className="ms-4 mt-2">Modify Patient</h3>
       <Form onSubmit={handleUpdate}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
           <Form.Label>
             name:
             <Form.Control type="text" name="name" defaultValue={patient.name} onChange={handleChange} />
           </Form.Label>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
           <Form.Label>
             age:
             <Form.Control type="number" name="age" defaultValue={patient.age} onChange={handleChange} />
           </Form.Label>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
           <Form.Label>
             Previous Appointment:
             <Form.Control
@@ -80,7 +80,7 @@ function ModifyPatient({ patients, setPatients }) {
             />
           </Form.Label>
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
           <Form.Label>
             Next Appointment:
             <Form.Control
@@ -91,7 +91,7 @@ function ModifyPatient({ patients, setPatients }) {
             />
           </Form.Label>
         </Form.Group>
-        <Button type="submit" variant="primary">
+        <Button className="ms-3" type="submit" variant="primary">
           Modify
         </Button>
       </Form>
