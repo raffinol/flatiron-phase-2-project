@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 function DeletePatient({ id, patients, setPatients, setPatient }) {
   function handleDeleteClick() {
@@ -14,7 +15,9 @@ function DeletePatient({ id, patients, setPatients, setPatient }) {
   }
   return (
     <div>
-      <button onClick={handleDeleteClick}>Delete Patient</button>
+      <Button variant="primary" onClick={handleDeleteClick}>
+        Delete Patient
+      </Button>
     </div>
   );
 }
