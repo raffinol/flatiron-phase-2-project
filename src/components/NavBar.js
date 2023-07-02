@@ -1,14 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function NavBar() {
   return (
-    <nav>
-      <NavLink exact to="/">
-        Patients
-      </NavLink>
-      <NavLink to="/NewPatient">New Patient</NavLink>
-    </nav>
+    <Navbar bg="primary" data-bs-theme="dark">
+      <Nav className="me-auto">
+        <Nav.Link exact href="/">
+          Patients List
+        </Nav.Link>
+        <Nav.Link href="/NewPatient">New Patient</Nav.Link>
+      </Nav>
+    </Navbar>
   );
 }
 
