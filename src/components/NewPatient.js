@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 function NewPatient(props) {
   const [formData, setFormData] = useState({
@@ -39,28 +41,43 @@ function NewPatient(props) {
   }
 
   return (
-    <section>
-      <h3>New Patient</h3>
-      <form onSubmit={handleSubmit}>
-        <label>
-          name:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        </label>
-        <label>
-          age:
-          <input type="number" name="age" value={formData.age} onChange={handleChange} />
-        </label>
-        <label>
-          Previous Appointment:
-          <input type="text" name="previousAppointment" value={formData.previousAppointment} onChange={handleChange} />
-        </label>
-        <label>
-          Next Appointment:
-          <input type="text" name="nextAppointment" value={formData.nextAppointment} onChange={handleChange} />
-        </label>
-        <button type="submit">Add Patient</button>
-      </form>
-    </section>
+    <>
+      <h3 className="ms-4 mt-3">New Patient</h3>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
+          <Form.Label>
+            name:
+            <Form.Control type="text" name="name" value={formData.name} onChange={handleChange} />
+          </Form.Label>
+        </Form.Group>
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
+          <Form.Label>
+            age:
+            <Form.Control type="number" name="age" value={formData.age} onChange={handleChange} />
+          </Form.Label>
+        </Form.Group>
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
+          <Form.Label>
+            Previous Appointment:
+            <Form.Control
+              type="text"
+              name="previousAppointment"
+              value={formData.previousAppointment}
+              onChange={handleChange}
+            />
+          </Form.Label>
+        </Form.Group>
+        <Form.Group className="mb-3 ms-4" controlId="formBasic">
+          <Form.Label>
+            Next Appointment:
+            <Form.Control type="text" name="nextAppointment" value={formData.nextAppointment} onChange={handleChange} />
+          </Form.Label>
+        </Form.Group>
+        <Button className="ms-3" type="submit" variant="primary">
+          Add Patient
+        </Button>
+      </Form>
+    </>
   );
 }
 
