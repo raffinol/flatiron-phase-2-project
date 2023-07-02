@@ -34,7 +34,7 @@ This will start the app and automatically open it in your default browser, if th
 
 ## How it works
 
-You can click on any patient from the patient list to show their information. Once a patient is selected you can modify their information or delete it by clicking the respective buttons. You can also add new Patients clicking 'New Patient" at the navigation bar.
+You can click on any patient from the patient list to show their information. Once a patient is selected you can modify their information or delete it by clicking the respective buttons. You can also add new Patients by clicking 'New Patient" at the navigation bar.
 
 ## Support
 
