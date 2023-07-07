@@ -9,7 +9,7 @@ function App() {
   const [patients, setPatients] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/patients')
+    fetch(`${process.env.REACT_APP_API_URL}/patients/`)
       .then((r) => r.json())
       .then((patientsData) => setPatients(patientsData));
   }, []);

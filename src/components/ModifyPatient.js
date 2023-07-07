@@ -34,7 +34,7 @@ function ModifyPatient({ patients, setPatients }) {
       previousAppointment: formData.previousAppointment,
       nextAppointment: formData.nextAppointment,
     };
-    fetch(`http://localhost:3000/patients/${id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/patients/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

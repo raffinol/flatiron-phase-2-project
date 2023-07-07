@@ -28,7 +28,7 @@ function NewPatient(props) {
       previousAppointment: formData.previousAppointment,
       nextAppointment: formData.nextAppointment,
     };
-    fetch('http://localhost:3000/patients', {
+    fetch(`${process.env.REACT_APP_API_URL}/patients/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

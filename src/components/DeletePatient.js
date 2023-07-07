@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 function DeletePatient({ id, patients, setPatients, setPatient }) {
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/patients/${id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/patients/${id}`, {
       method: 'DELETE',
     })
       .then((r) => r.json())
